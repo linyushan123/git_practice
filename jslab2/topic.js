@@ -7,7 +7,11 @@ var topic = [
     "條件判斷"
 ];
 
-var startDate = new Date();
+
+
+var startDate = new Date();//document.getElementById("date").value
+
+//console.log(startDate.getMonth());
 
 function setMonthAndDay(startMonth, startDay){
     //一次設定好月份與日期
@@ -17,6 +21,9 @@ function setMonthAndDay(startMonth, startDay){
     startDate.setSeconds(0);
 }
 
-//$("#date").append($("#date").startMonth);
-        
-//setMonthAndDay(("#date").startMonth,("#date").startDay);
+var dateControl = document.querySelector('input[type="date"]');
+dateControl.value = "2021-04-20";
+setMonthAndDay(4,20);
+$("#date").change(function(){
+    $("#date").attr("value",$(this).val()); //赋值
+});

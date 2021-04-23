@@ -1,12 +1,25 @@
+@import url(https://fonts.googleapis.com/css?family=Teko);
 img{
     width: 60px;
     height: 60px;
     border-radius: 50%;
 }
-.chatOdd img{
+.chatOdd1 img{
     float: left;
 }
-.chatEven img{
+  .chatEven3 img{
+    float: right;
+}
+ .chatOdd2 img{
+    float: left;
+}
+ .chatEven2 img{
+    float: right;
+} 
+ .chatOdd3 img{
+    float: left;
+}
+.chatEven1 img{
     float: right;
 }
 
@@ -20,10 +33,78 @@ img{
 
 .textLeft{
     background-color: lightblue;
+    animation:
+        typing 1s steps(20, end),
+        cursor 0.5s step-end infinite;
 }
 .textRight{
     background-color: lightpink;
+    animation:
+        typing 1s steps(20, end),
+        cursor 0.5s step-end infinite;
 }
+
+@keyframes chatOdd1 {
+    to {
+      visibility: visible;
+    }
+  }
+  .chatOdd1{
+    visibility: hidden;
+    animation: 0s linear 1s forwards chatOdd1 ;
+  }
+
+  @keyframes chatEven1 {
+    to {
+      visibility: visible;
+    }
+  }  
+  .chatEven1{
+    visibility: hidden;
+    animation: 0s linear 2s forwards chatEven1 ;
+  }
+
+  @keyframes chatOdd2 {
+    to {
+      visibility: visible;
+    }
+  }  
+  .chatOdd2{
+    visibility: hidden;
+    animation: 0s linear 3s forwards chatOdd2 ;
+  }
+
+  @keyframes chatEven2 {
+    to {
+      visibility: visible;
+    }
+  }  
+  .chatEven2{
+    visibility: hidden;
+    animation: 0s linear 4s forwards chatEven2 ;
+  }
+
+  @keyframes chatOdd3 {
+    to {
+      visibility: visible;
+    }
+  }  
+  .chatOdd3{
+    visibility: hidden;
+    animation: 0s linear 5s forwards chatOdd3 ;
+  }
+
+  @keyframes chatEven3 {
+    to {
+      visibility: visible;
+    }
+  }  
+  .chatEven3{
+    visibility: hidden;
+    animation: 0s linear 6s forwards chatEven3 ;
+    
+  }
+
 
 .triAngleToLeft{
     border-color: transparent lightpink transparent transparent;
